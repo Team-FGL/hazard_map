@@ -1,0 +1,13 @@
+#rainfall_window_class {
+  width: 370px;
+  height: 400px;
+  font-size:8pt;
+  overflow: hidden;
+}
+
+#rainfall_sum_window_class {
+  width: 100px;
+  height: 50px;
+  font-size:8pt;
+  overflow: hidden;
+}
