@@ -1,0 +1,21 @@
+<html lang="ja">
+<head>
+<title>ハザードマップ</title>
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="description" content="hazard map/ハザードマップ">
+	<meta name="keywords" content="visualizaion,hazard map,hazard,flood,landslie,live cam,rainfall,river,map,geolocation">
+	<meta name="keywords" content="可視化,ハザードマップ,浸水想定区域,土砂災害危険箇所,海上ライブカメラ,雨量,河川の水位,地図,ジオロケーション">
+	<link rel="stylesheet" type="text/css" media="screen,print" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" media="screen,print" href="css/rainfall.css" />
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v3.exp&sensor=false&hl=ja"></script>
+	<script type="text/javascript" src="js/hazard_map.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="js/shelter.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="js/flood.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="js/live_cam.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="js/rainfall.js" charset="UTF-8"></script>
+</head>
+<body onload="initialize()">
+  <div id="map_canvas"></div>
+</body>
+</html>

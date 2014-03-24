@@ -1,0 +1,167 @@
+<html lang="ja">
+<head>
+<title>京都観光安心ちゃん</title>
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="description" content="flood map/京都観光安心ちゃん">
+	<meta name="keywords" content="visualizaion, flood map, map, hazard map, ハザードマップ">
+	<meta name="google-translate-customization" content="526935a0d310db25-c6d3142893804877-g6d1a46abc1d0a58d-d"></meta>
+	<link rel="shortcut icon" type="image/png" href="image/favicon.png" />
+	<link rel="stylesheet" type="text/css" media="screen,print" href="style.css" />
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v3.exp&sensor=false&hl=ja"></script>
+	<script type="text/javascript" src="jquery.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="flood-map.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="ui.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="kyoto/shelter.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="kyoto/escape.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="kyoto/rescue.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="kyoto/ess.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="kyoto/pgo.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="kyoto/cgo.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="kyoto/ward_office.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="kyoto/bgo.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="kyoto/train_station.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="kyoto/bus_stop.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="kyoto/car_parking.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="kyoto/bicycles_parking.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="kyoto/souvenirs.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="kyoto/cookshop.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="kyoto/sightseeing.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="kyoto/religious_facility.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="kyoto/bousai.js" charset="UTF-8"></script>
+</head>
+<body onload="initialize()">
+  <div id="map_canvas"></div>
+  <div id="user-window">
+		<p class="open_menu">menu</p>
+			<div id="slideBox_menu">
+				<p class="open1">ルート検索</p>
+					<div id="slideBox1">
+						<!--
+						<div>現在地(A):<textarea id="current" wrap="off" onchange="calcRoute();"></textarea></div>
+						<div>避難場所(B):<textarea id="shelter" wrap="off" onchange="calcRoute();"></textarea></div>
+						-->
+						<div>現在地(A):<textarea id="current" wrap="off"></textarea></div>
+						<div>避難場所(B):<textarea id="shelter" wrap="off"></textarea></div>
+						<div><button type="button" onclick="calcRoute();">ルート検索</button></div>
+						<hr><form id="center-position">
+							<input type="checkbox" name="center-position" value="1" onchange="Disp_center_position('current');">現在地を自動更新する<br>
+						</form>
+					</div>
+				<p class="open2">避難所</p>
+					<div id="slideBox2">
+						<form id="shelter-form">
+							<input type="checkbox" name="p20_007" value="1" onchange="Shelter_change(value);">地震災害<br>
+							<input type="checkbox" name="p20_008" value="1" onchange="Shelter_change(value);">津波災害<br>
+							<input type="checkbox" name="p20_009" value="1" onchange="Shelter_change(value);" checked>水害<br>
+							<input type="checkbox" name="p20_010" value="1" onchange="Shelter_change(value);">火山災害<br>
+							<input type="checkbox" name="p20_011" value="1" onchange="Shelter_change(value);">その他<br>
+							<input type="checkbox" name="p20_012" value="1" onchange="Shelter_change(value);" checked>指定なし<br>
+						</form>
+					</div>
+				<p class="open3">浸水深</p>
+					<div id="slideBox3">
+						<form>
+							<input type="checkbox" name="flood-level" value="1" onchange="Flood_level_change(value);" checked>表示する<br>
+							<select name="flood-level" onchange="Flood_level_change(value);">
+								<option value="1">0～0.5m</option>
+								<option value="2">0.5～1.0m未満</option>
+								<option value="3">1.0～2.0m未満</option>
+								<option value="4">2.0～5.0m未満</option>
+								<option value="5" selected>5.0m以上</option>
+							</select>
+						</form>
+					</div>
+				<p class="open4">河川の水位</p>
+					<div id="slideBox4">
+						<form id="water_level_form">
+							観測所<br>
+							<input type="checkbox" name="water_level" value="1" onchange="Water_level_change(value);" checked>表示する<br>
+							<br>更新間隔<br>
+							<select name="water_level_select">
+								<option value="10" selected>10分毎</option>
+								<option value="60">1時間毎</option>
+							</select>
+						</form><hr>
+							はん濫情報<br>
+							<input type="checkbox" name="water_level_overlay" value="1" onchange="Water_level_overlay_change(value);">表示する
+						</form>
+					</div>
+				<p class="open5">ライブカメラ</p>
+					<div id="slideBox5">
+						<form id="livecam_form">
+							<input type="checkbox" name="livecam" value="1" onchange="Livecam_change(value);" checked>表示する<br>
+						</form>
+					</div>
+				<p class="open6">雨量</p>
+					<div id="slideBox6">
+						<form id="rainfall_form">
+							観測所<br>
+							<input type="checkbox" name="rainfall" value="1" onchange="Rainfall_change(value);" checked>表示する<br>
+							<br>更新間隔<br>
+							<select name="rainfall_select">
+								<option value="10" selected>10分毎</option>
+								<option value="60">1時間毎</option>
+							</select>
+						</form><hr>
+							レーダ雨量<br>
+							<input type="checkbox" name="rainfall_overlay" value="1" onchange="Rainfall_overlay_change(value);" checked>表示する
+						</form>
+					</div>
+				<p class="open7">土砂災害</p>
+					<div id="slideBox7">
+						<form id="landslide_form">
+							<input type="checkbox" name="landslide" value="1" onchange="Landslide_change(value);" checked>表示する<br>
+						</form>
+					</div>
+				<p class="open8">位置変更</p>
+					<div id="slideBox8">
+						<form id="genzai_form">
+						  <div>位置:<textarea id="genzai" wrap="off"></textarea>
+                                                      <input type="button" value="移動" onclick="Genzai_change(value);">
+                                                  </div>
+                                                </form>
+					</div>
+				<p class="open9">モード変更</p>
+					<div id="slideBox9">
+						<form id="kankou_form">
+							<input type="button" name="saigai_to_kankou" onclick="kankou_change(value);" value="観光モードを表示する"><br>
+                                                </form>
+					</div>
+
+			</div>
+<!--		<p class="open_menu">menu</p> -->
+			<div id="kankou_slideBox_menu">
+				<p class="kankou_open1">ルート検索</p>
+					<div id="kankou_slideBox1">
+						<div>現在地(A):<textarea id="kankou_current" wrap="off"></textarea></div>
+						<div>目的地(B):<textarea id="kankou_destination" wrap="off"></textarea></div>
+						<div><button type="button" onclick="kankou_calcRoute();">ルート検索</button></div>
+						<hr><form id="center-position">
+							<input type="checkbox" name="center-position" onchange="Disp_center_position('kankou_current');">現在地を自動更新する<br>
+						</form>
+					</div>
+				<p class="kankou_open9">モード変更</p>
+					<div id="kankou_slideBox9">
+						<form id="kankou_kankou_form">
+							<input type="button" name="kankou_to_saigai" onclick="kankou_change(value);" value="災害モードを表示する"><br>
+                                                </form>
+					</div>
+
+			</div>
+
+	</div>
+	<div id="overlay_help">
+		<div style="height:90%;widht90%;">
+			<object style="height:90%;width:90%;margin:10px;overflow:auto" data="help/index.html"></object>
+		</div>
+		<p id="help_close">close</p>
+	</div>
+	<div id="help_open">help</div>
+<div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'ja', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+//var rainfall_overlay_layer;
+
+var map;
+var markers = new Array();
+var infoWindows = new Array();
+
+
+function initialize() {
+
+	var initPos = new google.maps.LatLng(35.780407,139.611950);
+	var myOptions = {
+		noClear : true,
+		center : initPos,
+		zoom : 9,
+		mapTypeId : google.maps.MapTypeId.ROADMAP
+	};
+	map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+
+
+	getCurrentLocation();
+	// 少し間をおいてからkmlを読み込む
+	window.setTimeout(function() {
+//			Read_rainfall_overlay_kml();
+	}, 1500);
+
+
+//	MakeMarker(35.780407,139.611950, "test1");
+//	MakeMarker(36,138, "test2");
+
+	loadTextFile();
+
+
+
+	// 画面の中心が変わったらkmlファイルの再取得と再ロード
+  google.maps.event.addListener(map, 'center_changed', function() {
+    // 3 seconds after the center of the map has changed, rewrite kml layer.
+    window.setTimeout(function() {
+//			rainfall_overlay_layer.setMap(null);
+//			Read_rainfall_overlay_kml();
+    }, 3000);
+  });
+
+	// zoomが変わったらkmlファイルの再取得と再ロード
+  google.maps.event.addListener(map, 'zoom_changed', function() {
+    window.setTimeout(function() {
+//			rainfall_overlay_layer.setMap(null);
+//			Read_rainfall_overlay_kml();
+    }, 3000);
+  });
+
+//	Main_loop();
+
+}
+
+
+function Main_loop() {
+	window.setTimeout(function() {
+//		rainfall_overlay_layer.setMap(null);
+//		Read_rainfall_overlay_kml();
+	}, 3000);
+}
+
+function Read_rainfall_overlay_kml() {
+	//KMLファイルの読み込み
+	// rainfall_overlay map
+	var kmlUrl = "http://pingineer.net/cgi-bin/flood-map/rainfall_overlay.cgi?north=" + map.getBounds().getNorthEast().lat()
+		+ "&east=" + map.getBounds().getNorthEast().lng()
+		+ "&south=" + map.getBounds().getSouthWest().lat()
+		+ "&west=" + map.getBounds().getSouthWest().lng();
+	rainfall_overlay_layer = new google.maps.KmlLayer(kmlUrl, {
+		preserveViewport:true,
+		suppressInfoWindows: true
+	});
+	rainfall_overlay_layer.setMap(map);
+}
+
+// 位置情報の取得
+function getCurrentLocation() {
+	// geo locationの取得
+	navigator.geolocation.getCurrentPosition(
+	// （1）位置情報の取得に成功した場合
+	function (pos) {
+		map.panTo(new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
+
+//		var marker = new google.maps.Marker({
+//			position: new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude),
+//			map: map
+//		});
+	});
+}
+
+// Markerの作成
+function MakeMarker(lat, lng, text, address) {
+	var myLatlng = new google.maps.LatLng(lat,lng);
+	var marker = new google.maps.Marker({
+		position: myLatlng,
+		map: map,
+		title:text
+	});
+
+	// 作成したmarkerを配列にコピー
+	var i = markers.length;
+	markers[i] = marker;
+	delete marker;
+
+
+	// infoWindow絡みの処理
+	var infoWindow = new google.maps.InfoWindow();
+	infoWindows[i] = infoWindow;
+	delete infoWindow;
+
+	var info = "避難所名:" + text + "<br>\n"
+		+  "住所:" + address;
+	// markerクリックでinfoWindow表示
+	google.maps.event.addListener(markers[i], 'click', function() {
+		infoWindows[i].setContent(info);
+		infoWindows[i].open(map,marker);
+
+		// markerを一旦非表示
+		markers[i].setVisible(false);
+	});
+
+
+	// infowindowの×ボタンを押された際に発火されるイベント
+	// 但し、スクリプト内からinfowindowをcloseした場合には発火されない。
+	google.maps.event.addListener(infoWindows[i], 'closeclick', function(){
+		//閉じた場合の処理を記載
+		// markerを再表示
+		markers[i].setVisible(true);
+	});
+}
+
+
+function loadTextFile() {
+	httpObj = new XMLHttpRequest();
+	httpObj.onload = displayData;
+	httpObj.open("GET","test.json",true);
+	httpObj.send(null);
+}
+
+function displayData() {
+	//console.log(httpObj.responseText);
+	//var obj = JSON.parse(httpObj.responseText,JsonParseReviver);
+	var obj = JSON.parse(httpObj.responseText);
+	//console.log(obj);
+	for(var i =0; i<obj.shelter.length; i++){
+		MakeMarker(obj.shelter[i].latitude, obj.shelter[i].longitude, obj.shelter[i].name,obj.shelter[i].address);
+	}
+}
+
+function JsonParseReviver(key,value){
+	// 出力テスト
+	console.log("key:" + key + " value:" + value);
+
+	// 変換したい値を返す（ここでは本来の値をそのまま返している）
+	return value;
+}
+

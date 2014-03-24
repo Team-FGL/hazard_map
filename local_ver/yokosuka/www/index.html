@@ -1,0 +1,177 @@
+<html lang="ja">
+<head>
+<title>防災横須賀</title>
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="description" content="hazard map/防災横須賀">
+	<meta name="keywords" content="visualizaion,hazard map,hazard,flood,landslie,live cam,rainfall,river,map,geolocation">
+	<meta name="keywords" content="可視化,ハザードマップ,浸水想定区域,土砂災害危険箇所,海上ライブカメラ,雨量,河川の水位,地図,ジオロケーション">
+	<meta name="keywords" content="防災横須賀,レーダ雨量,河川の氾濫,氾濫情報">
+	<meta name="google-translate-customization" content="526935a0d310db25-c6d3142893804877-g6d1a46abc1d0a58d-d"></meta>
+	<link rel="shortcut icon" type="image/png" href="favicon.ico" />
+	<link rel="stylesheet" type="text/css" media="screen,print" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" media="screen,print" href="css/rainfall.css" />
+	<link rel="stylesheet" type="text/css" media="screen,print" href="css/water_level.css" />
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v3.exp&sensor=false&hl=ja"></script>
+	<script type="text/javascript" src="js/jquery.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="js/ui.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="js/gmap.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="js/hazard_map.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="js/shelter.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="js/shelter_sum.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="js/flood.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="js/landslide.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="js/live_cam.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="js/rainfall.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="js/water_level.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="js/kml.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="js/yokosuka/tsunami_area1_rank1.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="js/yokosuka/tsunami_area2_rank1.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="js/yokosuka/tsunami_area3_rank1.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="js/yokosuka/tsunami_area1_rank2.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="js/yokosuka/tsunami_area2_rank2.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="js/yokosuka/tsunami_area3_rank2.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="js/yokosuka/tsunami_area1_rank3.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="js/yokosuka/tsunami_area2_rank3.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="js/yokosuka/tsunami_area3_rank3.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="js/yokosuka/wide_area.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="js/yokosuka/aed.js" charset="UTF-8"></script>
+</head>
+<body onload="initialize()">
+  <div id="map_canvas"></div>
+  <div id="user-window">
+		<p class="open_menu">menu</p>
+			<div id="slideBox_menu">
+				<p class="open1">ルート検索</p>
+					<div id="slideBox1">
+						<!--
+						<div>現在地(A):<textarea id="current" wrap="off" onchange="calcRoute();"></textarea></div>
+						<div>避難場所(B):<textarea id="shelter" wrap="off" onchange="calcRoute();"></textarea></div>
+						-->
+						<div>現在地(A):<textarea id="current" wrap="off"></textarea></div>
+						<div>避難場所(B):<textarea id="shelter" wrap="off"></textarea></div>
+						<div><button type="button" onclick="calcRoute();">ルート検索</button></div>
+						<hr><form id="center-position">
+							<input type="checkbox" name="center-position" value="1" onchange="Disp_center_position('current');">現在地を自動更新する<br>
+						</form>
+					</div>
+				<p class="open12">AED</p>
+					<div id="slideBox12">
+						<form>
+							<input type="checkbox" name="aed" value="1" onchange="Aed_change(value);" checked>表示する<br>
+						</form>
+					</div>
+				<p class="open2">避難所</p>
+					<div id="slideBox2">
+						<form id="shelter-form">
+							<input type="checkbox" name="p20_007" value="1" onchange="Shelter_change(value);">地震災害<br>
+							<input type="checkbox" name="p20_008" value="1" onchange="Shelter_change(value);">津波災害<br>
+							<input type="checkbox" name="p20_009" value="1" onchange="Shelter_change(value);" checked>水害<br>
+							<input type="checkbox" name="p20_010" value="1" onchange="Shelter_change(value);">火山災害<br>
+							<input type="checkbox" name="p20_011" value="1" onchange="Shelter_change(value);">その他<br>
+							<input type="checkbox" name="p20_012" value="1" onchange="Shelter_change(value);" checked>指定なし<br>
+						</form>
+					</div>
+				<p class="open11">広域避難地</p>
+					<div id="slideBox11">
+						<form>
+							<input type="checkbox" name="wide_area" value="1" onchange="Wide_area_change(value);" checked>表示する<br>
+						</form>
+					</div>
+				<p class="open3">浸水深</p>
+					<div id="slideBox3">
+						<form>
+							<input type="checkbox" name="flood-level" value="1" onchange="Flood_level_change(value);" checked>表示する<br>
+							<select name="flood-level" onchange="Flood_level_change(value);">
+								<option value="1">0～0.5m</option>
+								<option value="2">0.5～1.0m未満</option>
+								<option value="3">1.0～2.0m未満</option>
+								<option value="4">2.0～5.0m未満</option>
+								<option value="5" selected>5.0m以上</option>
+							</select>
+						</form>
+					</div>
+				<p class="open10">津波</p>
+					<div id="slideBox10">
+						<form>
+							<input type="checkbox" name="tsunami_rank" value="1" onchange="Tsunami_rank_change(value);" checked>表示する<br>
+							<select name="tsunami_rank" onchange="Tsunami_rank_change(value);">
+								<option value="1">ランク1</option>
+								<option value="2">ランク2</option>
+								<option value="3" selected>ランク3</option>
+							</select>
+						</form>
+					</div>
+				<p class="open4">河川の水位</p>
+					<div id="slideBox4">
+						<form id="water_level_form">
+							観測所<br>
+							<input type="checkbox" name="water_level" value="1" onchange="Water_level_change(value);" checked>表示する<br>
+							<br>更新間隔<br>
+							<select name="water_level_select">
+								<option value="10" selected>10分毎</option>
+								<option value="60">1時間毎</option>
+							</select>
+						</form><hr>
+							はん濫情報<br>
+							<input type="checkbox" name="water_level_overlay" value="1" onchange="Water_level_overlay_change(value);">表示する
+						</form>
+					</div>
+				<p class="open5">ライブカメラ</p>
+					<div id="slideBox5">
+						<form id="livecam_form">
+							<input type="checkbox" name="livecam" value="1" onchange="Livecam_change(value);" checked>表示する<br>
+						</form>
+					</div>
+				<p class="open6">雨量</p>
+					<div id="slideBox6">
+						<form id="rainfall_form">
+							観測所<br>
+							<input type="checkbox" name="rainfall" value="1" onchange="Rainfall_change(value);" checked>表示する<br>
+							<br>更新間隔<br>
+							<select name="rainfall_select">
+								<option value="10" selected>10分毎</option>
+								<option value="60">1時間毎</option>
+							</select>
+						</form><hr>
+							レーダ雨量<br>
+							<input type="checkbox" name="rainfall_overlay" value="1" onchange="Rainfall_overlay_change(value);" checked>表示する
+						</form>
+					</div>
+				<p class="open7">土砂災害</p>
+					<div id="slideBox7">
+						<form id="landslide_form">
+							<input type="checkbox" name="landslide" value="1" onchange="Landslide_change(value);" checked>表示する<br>
+						</form>
+					</div>
+				<p class="open8">位置変更</p>
+					<div id="slideBox8">
+						<form id="genzai_form">
+						  <div>位置:<textarea id="genzai" wrap="off"></textarea>
+                                                      <input type="button" value="移動" onclick="Genzai_change(value);">
+                                                  </div>
+                                                </form>
+					</div>
+				<p class="open9">Language</p>
+					<div id="slideBox9">
+						<div id="google_translate_element"></div>
+						<script type="text/javascript">
+							function googleTranslateElementInit() {
+								new google.translate.TranslateElement({
+									pageLanguage: 'ja',
+									layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+								}, 'google_translate_element');}
+						</script>
+						<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+					</div>
+			</div>
+	</div>
+	<div id="overlay_help">
+		<div style="height:90%;widht90%;">
+			<object style="height:90%;width:90%;margin:10px;overflow:auto" data="help/index.html"></object>
+		</div>
+		<p id="help_close">close</p>
+	</div>
+	<div id="help_open">help</div>
+</body>
+</html>

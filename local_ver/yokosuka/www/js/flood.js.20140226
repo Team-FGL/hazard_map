@@ -1,0 +1,70 @@
+var flood_polygons = new Array();
+var flood_json;
+
+// floodのjsonデータを取得
+function Get_flood_data() {
+	flood_json = new XMLHttpRequest();
+	flood_json.onload = Parse_flood_json;
+	flood_json.open("GET","json/flood.json",true);
+	flood_json.send(null);
+}
+
+// 取得したfloodのjsonデータをパースしてポリゴンを作成
+function Parse_flood_json() {
+	var obj = JSON.parse(flood_json.responseText);
+	var latlng = new Array();
+	var outerBoundaryIs = new Array();
+	var innerBoundaryIs = new Array();
+	// floodの数分ループを回す
+	for(var i =0; i<obj.flood.length; i++){
+		outerBoundaryIs=[];
+		innerBoundaryIs=[];
+		// 外側のポリゴンを取得してgmap座標へ変換
+		// 外側は1個単位でjsonから送ること
+		for(var j=0; j<obj.flood[i].outerBoundaryIs.length; j=j+2){
+			var k = outerBoundaryIs.length;
+			outerBoundaryIs[k] = new google.maps.LatLng(obj.flood[i].outerBoundaryIs[j +1 ], obj.flood[i].outerBoundaryIs[j]);
+		}
+
+		// ホールとして切り抜く領域を取得してgmap座標へ変換
+		if(obj.flood[i].innerBoundaryIs !=null){
+			for(var j=0; j<obj.flood[i].innerBoundaryIs.length; j++){
+				var tmpArray = new Array();
+				// 切り抜き領域は複数ある場合もあるので数分ループを回す
+				for(var l=0; l<obj.flood[i].innerBoundaryIs[j].length; l=l+2){
+					//console.log(obj.flood[i].innerBoundaryIs[j][l]);
+					var k = tmpArray.length;
+					tmpArray[k] = new google.maps.LatLng(obj.flood[i].innerBoundaryIs[j][l+1], obj.flood[i].innerBoundaryIs[j][l]);
+				}
+				innerBoundaryIs[j] = tmpArray;
+			}
+		}
+
+		// ポリゴンを作成する
+		var tmpArray = new Array();
+		tmpArray[0] = outerBoundaryIs; 
+		for(var k=0; k<innerBoundaryIs.length; k++){
+			tmpArray[1 + k] = innerBoundaryIs[k]; 
+		}
+		Make_flood(tmpArray);
+	}
+}
+
+
+// ポリゴンの作成
+function Make_flood(polygon_latlng) {
+	var i = flood_polygons.length;
+  polygon = new google.maps.Polygon({
+    paths: polygon_latlng,
+    strokeColor: "#0000FF",
+    strokeOpacity: 0.8,
+    strokeWeight: 2,
+    fillColor: "#0000FF",
+    fillOpacity: 0.35
+  });
+
+	// 直接配列上にポリゴンを作成してもうまく動かないため、一度作成してから配列上にコピー
+	flood_polygons[i] = polygon
+  flood_polygons[i].setMap(map);
+	delete polygon;
+}

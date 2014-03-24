@@ -1,0 +1,148 @@
+{
+"type": "FeatureCollection",
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "ITEM003": "長井小学校", "ITEM004": "10西", "ITEM005": "26　長井連町", "ITEM006": "屋形町内会", "ITEM008": "長井5-9-1", "UserID": 70, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.61219544525099, 35.205119932187827 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "長井中学校", "ITEM004": "10西", "ITEM005": "26　長井連町", "ITEM006": "仮屋ヶ崎町内会", "ITEM008": "長井5-12-1", "UserID": 71, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.614602623565162, 35.205956514565266 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "武山中学校", "ITEM004": "10西", "ITEM005": "24　武山連町", "ITEM006": "武町内会", "ITEM008": "武3-31-1", "UserID": 69, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.64371789251706, 35.218081573951814 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "武山小学校", "ITEM004": "10西", "ITEM005": "24　武山連町", "ITEM006": "太田和中町内会", "ITEM008": "太田和3-1-1", "UserID": 67, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.639157233865632, 35.224565155902866 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "富士見小学校", "ITEM004": "10西", "ITEM005": "24　武山連町", "ITEM006": "武町内会", "ITEM008": "武3-19-1", "UserID": 68, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.64262008052782, 35.220198592466026 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "野比小学校", "ITEM004": "09北下浦", "ITEM005": "20　野比地区連町", "ITEM006": "大作町内会", "ITEM008": "野比1-25-1", "UserID": 57, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.684624375382811, 35.215574313493377 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "野比中学校", "ITEM004": "09北下浦", "ITEM005": "20　野比地区連町", "ITEM006": "野比東町内会", "ITEM008": "野比4-4-1", "UserID": 58, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.694439562819809, 35.215085491557247 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "野比東小学校", "ITEM004": "09北下浦", "ITEM005": "20　野比地区連町", "ITEM006": "野比東町内会", "ITEM008": "野比4-6-1", "UserID": 59, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.694788717989127, 35.213812155788574 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "長沢中学校", "ITEM004": "09北下浦", "ITEM005": "21　長沢地区連町", "ITEM006": "入町内会", "ITEM008": "長沢5-1-1", "UserID": 60, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.675651660911285, 35.213404100158833 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "北下浦小学校", "ITEM004": "09北下浦", "ITEM005": "21　長沢地区連町", "ITEM006": "宮の下町内会", "ITEM008": "長沢1-29-1", "UserID": 61, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.674530235777638, 35.203116286444512 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "北下浦中学校", "ITEM004": "09北下浦", "ITEM005": "21　長沢地区連町", "ITEM006": "宮の下町内会", "ITEM008": "長沢1-30-17", "UserID": 62, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.67337675586316, 35.204336402523502 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "津久井小学校", "ITEM004": "09北下浦", "ITEM005": "22　津久井地区連町", "ITEM006": "安戸町内会", "ITEM008": "津久井5-2-1", "UserID": 63, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.667153219054939, 35.207643343413508 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "粟田小学校", "ITEM004": "08久里浜", "ITEM005": "19　久里浜地区連町", "ITEM006": "ハイランド２丁目自治会", "ITEM008": "ハイランド2-41-1", "UserID": 56, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.685112782206431, 35.224129215924634 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "大楠小学校", "ITEM004": "10西", "ITEM005": "25　大楠連町", "ITEM006": "芦名町内会", "ITEM008": "芦名1-29-18", "UserID": 64, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.607344237104684, 35.234115841675951 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "大楠中学校", "ITEM004": "10西", "ITEM005": "25　大楠連町", "ITEM006": "芦名町内会", "ITEM008": "芦名1-2-1", "UserID": 65, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.615750113006015, 35.231028137726348 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "荻野小学校", "ITEM004": "10西", "ITEM005": "25　大楠連町", "ITEM006": "長坂町内会", "ITEM008": "荻野8-1", "UserID": 66, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.628698434421239, 35.226821264842222 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "衣笠中学校", "ITEM004": "05衣笠", "ITEM005": "15　衣笠地区連町", "ITEM006": "平作町内会", "ITEM008": "平作2-31-1", "UserID": 26, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.652312415343033, 35.252530706103222 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "森崎小学校", "ITEM004": "05衣笠", "ITEM005": "15　衣笠地区連町", "ITEM006": "森崎団地自治会", "ITEM008": "森崎3-13-1", "UserID": 30, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.679330134210915, 35.245241597753839 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "大矢部中学校", "ITEM004": "05衣笠", "ITEM005": "15　衣笠地区連町", "ITEM006": null, "ITEM008": "森崎5-14-2", "UserID": 31, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.665129049998683, 35.244782252626294 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "大矢部小学校", "ITEM004": "05衣笠", "ITEM005": "15　衣笠地区連町", "ITEM006": "大矢部町内会", "ITEM008": "大矢部3-26-1", "UserID": 32, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.675870914665182, 35.238418410956172 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "大塚台小学校", "ITEM004": "06大津", "ITEM005": "16　大津地区連町", "ITEM006": "池田町内会", "ITEM008": "池田町3-1-1", "UserID": 39, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.694650822481407, 35.245022053829295 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "久里浜中学校", "ITEM004": "08久里浜", "ITEM005": "19　久里浜地区連町", "ITEM006": "八幡町内会", "ITEM008": "久里浜2-11-1", "UserID": 49, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.698769840825065, 35.228881778247363 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "神明小学校", "ITEM004": "08久里浜", "ITEM005": "19　久里浜地区連町", "ITEM006": null, "ITEM008": "神明町407", "UserID": 52, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.701398942254002, 35.226086245297175 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "神明中学校", "ITEM004": "08久里浜", "ITEM005": "19　久里浜地区連町", "ITEM006": null, "ITEM008": "神明町903", "UserID": 53, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.700286543807351, 35.225337013601923 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "岩戸小学校", "ITEM004": "08久里浜", "ITEM005": "19　久里浜地区連町", "ITEM006": null, "ITEM008": "岩戸5-20-1", "UserID": 54, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.667376654635888, 35.234012826711883 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "岩戸中学校", "ITEM004": "08久里浜", "ITEM005": "19　久里浜地区連町", "ITEM006": null, "ITEM008": "岩戸5-6-3", "UserID": 55, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.668593235973276, 35.227700636823783 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "衣笠小学校", "ITEM004": "05衣笠", "ITEM005": "15　衣笠地区連町", "ITEM006": "第一衣笠町内会", "ITEM008": "小矢部2-16-1", "UserID": 27, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.663422192650501, 35.25523759641316 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "公郷小学校", "ITEM004": "05衣笠", "ITEM005": "15　衣笠地区連町", "ITEM006": "神金町内会", "ITEM008": "公郷町4-5", "UserID": 28, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.675357486580197, 35.255691141929574 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "上の台中学校", "ITEM004": "07浦賀", "ITEM005": "18　鴨居地区連町", "ITEM006": "鴨居臨海自治会", "ITEM008": "鴨居2-55-15", "UserID": 44, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.73149193170434, 35.24811056493882 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "浦賀小学校", "ITEM004": "07浦賀", "ITEM005": "17　浦賀地区連町", "ITEM006": "芝生町内会", "ITEM008": "浦賀3-8-1", "UserID": 46, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.714227625332853, 35.250205156973976 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "浦賀中学校", "ITEM004": "07浦賀", "ITEM005": "17　浦賀地区連町", "ITEM006": "芝生町内会", "ITEM008": "浦賀3-26-1", "UserID": 47, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.712058993282056, 35.250252041311981 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "高坂小学校", "ITEM004": "07浦賀", "ITEM005": "17　浦賀地区連町", "ITEM006": "高坂町内会", "ITEM008": "西浦賀3-1-1", "UserID": 48, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.714359005336092, 35.241286204611782 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "久里浜小学校", "ITEM004": "08久里浜", "ITEM005": "19　久里浜地区連町", "ITEM006": "久里浜６丁目町内会", "ITEM008": "久里浜6-6-1", "UserID": 50, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.708092492557995, 35.229402988436618 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "明浜小学校", "ITEM004": "08久里浜", "ITEM005": "19　久里浜地区連町", "ITEM006": "久里浜６丁目町内会", "ITEM008": "久里浜6-7-1", "UserID": 51, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.706934713789536, 35.227952451737764 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "望洋小学校", "ITEM004": "06大津", "ITEM005": "16　大津地区連町", "ITEM006": "桜が丘１丁目自治会", "ITEM008": "桜が丘1-50-1", "UserID": 38, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.703096991148669, 35.25482283072764 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "小原台小学校", "ITEM004": "07浦賀", "ITEM005": "18　鴨居地区連町", "ITEM006": "小原台町内会", "ITEM008": "小原台3-1", "UserID": 41, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.730160849482928, 35.252552254088435 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "鴨居小学校", "ITEM004": "07浦賀", "ITEM005": "18　鴨居地区連町", "ITEM006": null, "ITEM008": "鴨居3-1-6", "UserID": 42, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.733016419957238, 35.250853195138312 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "鴨居中学校", "ITEM004": "07浦賀", "ITEM005": "18　鴨居地区連町", "ITEM006": null, "ITEM008": "鴨居3-2-2", "UserID": 43, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.733224442456788, 35.252462430032836 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "沢山小学校", "ITEM004": "04逸見", "ITEM005": "14　逸見地区連町", "ITEM006": "東逸見第４町内会", "ITEM008": "東逸見町3-35", "UserID": 12, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.650190289635049, 35.275043590623014 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "池上小学校", "ITEM004": "05衣笠", "ITEM005": "15　衣笠地区連町", "ITEM006": "池上町会", "ITEM008": "池上3-5-1", "UserID": 22, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.647650867812757, 35.260004192054105 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "池上中学校", "ITEM004": "05衣笠", "ITEM005": "15　衣笠地区連町", "ITEM006": "池上町会", "ITEM008": "池上3-5-1", "UserID": 23, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.647205668551351, 35.261486906479789 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "平作小学校", "ITEM004": "05衣笠", "ITEM005": "15　衣笠地区連町", "ITEM006": "第一平作町内会", "ITEM008": "平作5-28-10", "UserID": 24, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.64326042268047, 35.257907402026568 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "城北小学校", "ITEM004": "05衣笠", "ITEM005": "15　衣笠地区連町", "ITEM006": "平作町内会", "ITEM008": "平作1-6-1", "UserID": 25, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.656012687085706, 35.256432183326893 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "桜小学校", "ITEM004": "01本庁", "ITEM005": "09　坂本連町", "ITEM006": "坂本町１丁目町内会", "ITEM008": "坂本町1-19", "UserID": 16, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.657778312847086, 35.272633955244949 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "不入斗中学校", "ITEM004": "01本庁", "ITEM005": "09　坂本連町", "ITEM006": "坂本町１丁目町内会", "ITEM008": "坂本町1-19", "UserID": 17, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.660552584619182, 35.272942182147972 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "坂本中学校", "ITEM004": "01本庁", "ITEM005": "09　坂本連町", "ITEM006": "坂本町１丁目町内会", "ITEM008": "坂本町1-19", "UserID": 18, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.65903874932954, 35.271357727780384 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "逸見小学校", "ITEM004": "04逸見", "ITEM005": "14　逸見地区連町", "ITEM006": "西逸見第１町内会", "ITEM008": "西逸見町1-14", "UserID": 11, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.649350882400597, 35.283175924017897 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "汐入小学校", "ITEM004": "01本庁", "ITEM005": "08　汐入連町", "ITEM006": "汐留町内会", "ITEM008": "汐入町2-53", "UserID": 15, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.663676477960593, 35.279919623245178 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "豊島小学校", "ITEM004": "01本庁", "ITEM005": "06　上町連町", "ITEM006": "豊島町内会", "ITEM008": "上町3-21", "UserID": 19, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.669403489616741, 35.270915820152617 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "山崎小学校", "ITEM004": "01本庁", "ITEM005": "04　三春町1.2.6丁目連町", "ITEM006": "三春町６丁目町内会", "ITEM008": "三春町6-4", "UserID": 21, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.682845539304054, 35.265737609165335 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "公郷中学校", "ITEM004": "05衣笠", "ITEM005": "15　衣笠地区連町", "ITEM006": "神金町内会", "ITEM008": "公郷町5-81", "UserID": 29, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.679154384216304, 35.257106873895758 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "大津小学校", "ITEM004": "06大津", "ITEM005": "16　大津地区連町", "ITEM006": "大津町３丁目町内会", "ITEM008": "大津町3-24-1", "UserID": 33, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.693833043654109, 35.259409731409576 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "大津中学校", "ITEM004": "06大津", "ITEM005": "16　大津地区連町", "ITEM006": null, "ITEM008": "大津町5-2-1", "UserID": 34, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.690468099648569, 35.260578751220251 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "根岸小学校", "ITEM004": "06大津", "ITEM005": "16　大津地区連町", "ITEM006": "大津町５丁目町内会", "ITEM008": "大津町5-5-1", "UserID": 35, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.686289517608458, 35.257197334257228 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "田戸小学校", "ITEM004": "01本庁", "ITEM005": "01　中央地区連町", "ITEM006": "米が浜町会", "ITEM008": "米が浜通2-12", "UserID": 14, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.675324923307471, 35.27456115594336 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "鶴久保小学校", "ITEM004": "01本庁", "ITEM005": "07　上町第2連町", "ITEM006": "不入斗町内会", "ITEM008": "不入斗町1-1", "UserID": 20, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.667426658141778, 35.268094978142514 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "常葉中学校", "ITEM004": "01本庁", "ITEM005": "01　中央地区連町", "ITEM006": "小川町町内会", "ITEM008": "小川町18", "UserID": 13, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.674337007840165, 35.281894535131258 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "諏訪小学校", "ITEM004": "01本庁", "ITEM005": "01　中央地区連町", "ITEM006": "小川町町内会", "ITEM008": "小川町18番地", "UserID": 76, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.673946371336825, 35.282479409973732 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "馬堀小学校", "ITEM004": "06大津", "ITEM005": "16　大津地区連町", "ITEM006": "馬堀町３・４丁目町内会", "ITEM008": "馬堀町4-10-1", "UserID": 36, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.714967465608112, 35.259535464532775 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "馬堀中学校", "ITEM004": "06大津", "ITEM005": "16　大津地区連町", "ITEM006": "馬堀町３・４丁目町内会", "ITEM008": "馬堀町4-10-2", "UserID": 37, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.717061909339378, 35.258740266593321 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "走水小学校", "ITEM004": "06大津", "ITEM005": "16　大津地区連町", "ITEM006": "走水町内会", "ITEM008": "走水2-2-2", "UserID": 40, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.728871918933805, 35.26531194561224 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "鷹取小学校", "ITEM004": "02追浜", "ITEM005": "10　追浜自治会連協", "ITEM006": "湘南鷹取４丁目自治会", "ITEM008": "湘南鷹取4-7-1", "UserID": 6, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.61459348317598, 35.307735239195523 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "鷹取中学校", "ITEM004": "02追浜", "ITEM005": "10　追浜自治会連協", "ITEM006": "湘南鷹取２丁目自治会", "ITEM008": "湘南鷹取2-30-1", "UserID": 5, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.622036663093866, 35.308181427709506 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "追浜小学校", "ITEM004": "02追浜", "ITEM005": "10　追浜自治会連協", "ITEM006": "鷹取町内会", "ITEM008": "鷹取2-16-1", "UserID": 4, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.617962584088502, 35.31543846433231 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "田浦中学校", "ITEM004": "03田浦", "ITEM005": "11　船越連町", "ITEM006": "梅田互親会", "ITEM008": "船越町7-66", "UserID": 7, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.631209730649914, 35.302658383886566 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "船越小学校", "ITEM004": "03田浦", "ITEM005": "11　船越連町", "ITEM006": "駒寄町内会", "ITEM008": "船越町5-34", "UserID": 8, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.626342133537634, 35.300967277570372 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "田浦小学校", "ITEM004": "03田浦", "ITEM005": "12　田浦町連自", "ITEM006": "田浦町３丁目自治会", "ITEM008": "田浦町3-55", "UserID": 9, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.631417964090929, 35.290718513006588 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "長浦小学校", "ITEM004": "04逸見", "ITEM005": "14　逸見地区連町", "ITEM006": "安針台自治会", "ITEM008": "安針台3-1", "UserID": 10, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.646306327586927, 35.287974341775005 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "夏島小学校", "ITEM004": "02追浜", "ITEM005": "10　追浜自治会連協", "ITEM006": null, "ITEM008": "浦郷町4-35", "UserID": 2, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.633932024839993, 35.316458501150684 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "浦郷小学校", "ITEM004": "02追浜", "ITEM005": "10　追浜自治会連協", "ITEM006": "追浜東町東会", "ITEM008": "追浜東町2-14", "UserID": 3, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.629827291916655, 35.31298415197292 ] } }
+,
+{ "type": "Feature", "properties": { "ITEM003": "追浜中学校", "ITEM004": "02追浜", "ITEM005": "10　追浜自治会連協", "ITEM006": null, "ITEM008": "夏島町12", "UserID": 1, "ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 139.632695729705347, 35.319405646274255 ] } }
+
+]
+}

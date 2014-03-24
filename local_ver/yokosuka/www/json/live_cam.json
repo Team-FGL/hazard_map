@@ -1,0 +1,701 @@
+{"took":16,"timed_out":false,"_shards":{"total":5,"successful":5,"failed":0},"hits":{"total":73,"max_score":1.0,"hits":[{"_index":"hazard_map","_type":"live_cam","_id":"34","_score":1.0, "_source" : {
+  "properties":{
+    "name":"伊勢湾海上交通センター（南西）",
+    "url":"http://www6.kaiho.mlit.go.jp/04kanku/nagoya/isewan_martis_no1/livecamera/index.html#003321",
+    "address":"愛知県田原市伊良湖町古山2814-38"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[137.016449,34.580409]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"41","_score":1.0, "_source" : {
+  "properties":{
+    "name":"神戸第二信号所",
+    "url":"http://www6.kaiho.mlit.go.jp/05kanku/kobe/kobe_no2_ss/livecamera/index.html#001010",
+    "live_url":"http://60.37.239.35/viewer/live/ja/live.html"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[135.2330615,34.6693177]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"27","_score":1.0, "_source" : {
+  "properties":{
+    "name":"御前埼灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/03kanku/shimizu/omaesaki_lt/livecamera/index.html#001002",
+    "live_url":"http://211.11.136.197/viewer/live/ja/live.html"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[138.2257205,34.5958411]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"15","_score":1.0, "_source" : {
+  "properties":{
+    "name":"大船渡港指向灯",
+    "url":"http://www6.kaiho.mlit.go.jp/02kanku/kamaishi/ofunatoko_dl/livecamera/index.html#000993",
+    "address":"岩手県大船渡市大船渡港灯台"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[141.714028,39.031391]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"39","_score":1.0, "_source" : {
+  "properties":{
+    "name":"潮岬灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/05kanku/tanabe/shionomisaki_lt/livecamera/index.html#001011",
+    "live_url":"http://58.91.221.170/viewer/live/ja/live.html"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[135.754311,33.4376032]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"22","_score":1.0, "_source" : {
+  "properties":{
+    "name":"本牧船舶通航信号所",
+    "url":"http://www6.kaiho.mlit.go.jp/03kanku/yokohama/honmoku_vtss/livecamera/index.html#000999"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[139.683153,35.434694]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"3","_score":1.0, "_source" : {
+  "properties":{
+    "name":"サロマ湖口灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/01kanku/monbetsu/saromako_entrance_lt/livecamera/index.html#000986"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[143.8024769,44.1312174]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"8","_score":1.0, "_source" : {
+  "properties":{
+    "name":"チキウ岬灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/01kanku/muroran/chikiumisaki_lt/livecamera/index.html#000796"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[141.0012025,42.3021427]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"10","_score":1.0, "_source" : {
+  "properties":{
+    "name":"鴎島灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/01kanku/hakodate/kamomeshima_lt/livecamera/index.html#000981"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[140.1140986,41.8682443]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"46","_score":1.0, "_source" : {
+  "properties":{
+    "name":"音戸ノ瀬戸南口２",
+    "url":"http://180.43.117.132/mics/#001016"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[132.538377,34.194402]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"53","_score":1.0, "_source" : {
+  "properties":{
+    "name":"関門海峡海上交通センター",
+    "url":"http://www6.kaiho.mlit.go.jp/07kanku/moji/kanmon_martis/livecamera/index.html#003329",
+    "live_url":"http://210.164.113.11/viewer/live/ja/live.html"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[130.9188796,33.8972063]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"58","_score":1.0, "_source" : {
+  "properties":{
+    "name":"石見大崎鼻灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/08kanku/hamada/iwamiosakihana_lt/livecamera/index.html#001025",
+    "live_url":"http://219.165.88.142/viewer/live/ja/live.html",
+    "address":"島根県江津市石見大崎鼻灯台"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[132.277981,34.9757]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"60","_score":1.0, "_source" : {
+  "properties":{
+    "name":"美保関灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/08kanku/sakai/mihonoseki_lt/livecamera/index.html#001027",
+    "live_url":"http://221.113.216.9/viewer/live/ja/live.html"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[133.3252814,35.5672634]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"65","_score":1.0, "_source" : {
+  "properties":{
+    "name":"伏木指向灯",
+    "url":"http://www6.kaiho.mlit.go.jp/09kanku/fushiki/fushiki_dl/livecamera/index.html#001030",
+    "live_url":"http://125.206.48.233/viewer/live/ja/live.html"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[137.142679,36.77533]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"72","_score":1.0, "_source" : {
+  "properties":{
+    "name":"種子島灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/10kanku/kagoshima/tanegashima_lt/livecamera/index.html#283759",
+    "live_url":"http://210.163.183.230/viewer/live/ja/live.html"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[130.991363,30.593001]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"38","_score":1.0, "_source" : {
+  "properties":{
+    "name":"尾鷲海上保安部庁舎",
+    "url":"http://www6.kaiho.mlit.go.jp/04kanku/owase/owase_cgo/livecamera/index.html#001006",
+    "live_url":"http://218.219.244.76/viewer/live/ja/live.html",
+    "address":"三重県尾鷲市林町1-29"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[136.201951,34.071702]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"33","_score":1.0, "_source" : {
+  "properties":{
+    "name":"伊勢湾海上交通センター（北西）",
+    "url":"http://www6.kaiho.mlit.go.jp/04kanku/nagoya/isewan_martis_no2/livecamera/index.html#003322",
+    "address":"愛知県田原市伊良湖町古山2814-38"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[137.016449,34.580409]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"21","_score":1.0, "_source" : {
+  "properties":{
+    "name":"犬吠埼灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/03kanku/choshi/inubosaki_lt/livecamera/index.html#001001",
+    "live_url":"http://202.234.227.219/viewer/live/ja/live.html"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[140.86844,35.7079049]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"19","_score":1.0, "_source" : {
+  "properties":{
+    "name":"酒田灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/02kanku/sakata/sakata_lt/livecamera/index.html#000996",
+    "live_url":"http://219.67.252.241/viewer/live/ja/live.html"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[139.5562549,39.2001337]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"45","_score":1.0, "_source" : {
+  "properties":{
+    "name":"来島海峡海上交通センター",
+    "url":"http://www6.kaiho.mlit.go.jp/06kanku/imabari/kurushima_martis/livecamera/index.html#003328"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[132.9878189,34.0901967]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"26","_score":1.0, "_source" : {
+  "properties":{
+    "name":"石廊埼灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/03kanku/shimoda/irosaki_lt/livecamera/index.html#001003"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[138.845264,34.602934]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"7","_score":1.0, "_source" : {
+  "properties":{
+    "name":"襟裳岬灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/01kanku/muroran/erimomisaki_lt/livecamera/index.html#000797"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[143.245858,41.926104]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"2","_score":1.0, "_source" : {
+  "properties":{
+    "name":"元地灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/01kanku/wakkanai/motochi_lt/livecamera/index.html#283757"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[141.0197169,45.2839321]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"14","_score":1.0, "_source" : {
+  "properties":{
+    "name":"八戸信号所",
+    "url":"http://www6.kaiho.mlit.go.jp/02kanku/hachinohe/hachinohe_ss/livecamera/index.html#000991"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[141.5214445,40.5281347]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"40","_score":1.0, "_source" : {
+  "properties":{
+    "name":"大阪灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/05kanku/osaka/osaka_lt/livecamera/index.html#001043"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[135.5021651,34.6937378]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"52","_score":1.0, "_source" : {
+  "properties":{
+    "name":"火ノ山下潮流信号所",
+    "url":"http://www6.kaiho.mlit.go.jp/07kanku/moji/hinoyamashita_tss/livecamera/index.html#001020"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[130.9613896,33.9680612]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"57","_score":1.0, "_source" : {
+  "properties":{
+    "name":"大瀬埼ディファレンシャルGPS局",
+    "url":"http://www6.kaiho.mlit.go.jp/07kanku/nagasaki/osesaki_dgps/livecamera/index.html#001021",
+    "live_url":"http://210.253.227.66/viewer/live/ja/live.html"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[128.6863888889,32.6169444444]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"64","_score":1.0, "_source" : {
+  "properties":{
+    "name":"大野灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/09kanku/kanazawa/ono_lt/livecamera/index.html#001033",
+    "live_url":"http://220.221.255.192/viewer/live/ja/live.html"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[136.6028729,36.6160675]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"69","_score":1.0, "_source" : {
+  "properties":{
+    "name":"都井岬灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/10kanku/miyazaki/toimisaki_lt/livecamera/index.html#001035"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[131.3457779,31.3673872]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"71","_score":1.0, "_source" : {
+  "properties":{
+    "name":"三角灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/10kanku/kumamoto/misumi_lt/livecamera/index.html#001038"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[130.4438888889,32.625]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"32","_score":1.0, "_source" : {
+  "properties":{
+    "name":"名古屋港海上交通センター（西）",
+    "url":"http://www6.kaiho.mlit.go.jp/04kanku/nagoya/nagoyako_martis_no1/livecamera/index.html#003323",
+    "address":"愛知県名古屋市港区金城ふ頭3-1"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[136.844673,35.043364]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"1","_score":1.0, "_source" : {
+  "properties":{
+    "name":"宗谷岬灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/01kanku/wakkanai/soyamisaki_lt/livecamera/index.html#000333",
+    "live_url":"http://61.45.37.85/viewer/live/ja/live.html"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[141.9366003,45.5227386]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"25","_score":1.0, "_source" : {
+  "properties":{
+    "name":"野島埼灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/03kanku/chiba/nojimasaki_lt/livecamera/index.html#000998",
+    "live_url":"http://222.147.88.94/viewer/live/ja/live.html"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[139.8883491,34.9017312]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"20","_score":1.0, "_source" : {
+  "properties":{
+    "name":"磯埼灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/03kanku/ibaraki/isozaki_lt/livecamera/index.html#000997",
+    "live_url":"http://60.40.27.30/viewer/live/ja/live.html"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[139.6077894,35.155508]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"37","_score":1.0, "_source" : {
+  "properties":{
+    "name":"四日市防波堤信号所",
+    "url":"http://www6.kaiho.mlit.go.jp/04kanku/yokkaichi/yokkaichiko_bkw_lt/livecamera/index.html#001007"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[136.643048,34.977861]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"44","_score":1.0, "_source" : {
+  "properties":{
+    "name":"備讃瀬戸海上交通センター",
+    "url":"http://www6.kaiho.mlit.go.jp/06kanku/takamatsu/bisan_martis/livecamera/index.html#003327"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[133.8212936,34.3031998]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"18","_score":1.0, "_source" : {
+  "properties":{
+    "name":"秋田海上保安部庁舎",
+    "url":"http://www6.kaiho.mlit.go.jp/02kanku/akita/akita_cgo/livecamera/index.html#000992"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[140.063722,39.752256]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"13","_score":1.0, "_source" : {
+  "properties":{
+    "name":"尻屋埼灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/02kanku/hachinohe/shiriyasaki_lt/livecamera/index.html#000990"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[141.4616882,41.4300792]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"49","_score":1.0, "_source" : {
+  "properties":{
+    "name":"佐田岬灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/06kanku/matsuyama/sadamisaki_lt/livecamera/index.html#001017"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[132.014948,33.3429202]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"6","_score":1.0, "_source" : {
+  "properties":{
+    "name":"釧路埼灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/01kanku/kushiro/kushirosaki_lt/livecamera/index.html#000988"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[144.3733036,42.9696413]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"51","_score":1.0, "_source" : {
+  "properties":{
+    "name":"見島北灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/07kanku/senzaki/mishima_n_lt/livecamera/index.html#001019"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[131.202596,34.386453]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"56","_score":1.0, "_source" : {
+  "properties":{
+    "name":"若宮灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/07kanku/karatsu/wakamiya_lt/livecamera/index.html#001023",
+    "live_url":"http://220.157.219.240/viewer/live/ja/live.html"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[129.960515,33.469913]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"63","_score":1.0, "_source" : {
+  "properties":{
+    "name":"立石岬",
+    "url":"http://www6.kaiho.mlit.go.jp/08kanku/tsuruga/tateishimisaki/livecamera/index.html#001024",
+    "live_url":"http://203.140.126.15/viewer/live/ja/live.html"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[136.0283333,35.7666667]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"68","_score":1.0, "_source" : {
+  "properties":{
+    "name":"阿賀野川口灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/09kanku/niigata/aganokawa_rm_lt/livecamera/index.html#001034",
+    "address":"新潟県新潟市北区松浜みなと7-17"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[139.135991,37.959363]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"70","_score":1.0, "_source" : {
+  "properties":{
+    "name":"佐多岬灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/10kanku/kagoshima/satamisaki_lt/livecamera/index.html#001036",
+    "live_url":"http://219.96.144.247/viewer/live/ja/live.html",
+    "address":"鹿児島県肝属郡南大隅町（大輪島）"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[130.6594444444,30.9922222222]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"31","_score":1.0, "_source" : {
+  "properties":{
+    "name":"名古屋港海上交通センター（東）",
+    "url":"http://www6.kaiho.mlit.go.jp/04kanku/nagoya/nagoyako_martis_no2/livecamera/index.html#003324",
+    "address":"愛知県名古屋市港区金城ふ頭3-1"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[136.844673,35.043364]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"43","_score":1.0, "_source" : {
+  "properties":{
+    "name":"孫埼灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/05kanku/tokushima/magosaki_lt/livecamera/index.html#001012",
+    "address":"徳島県鳴門市鳴門町大毛土佐泊浦字福地６５－９４"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[134.645112,34.237713]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"5","_score":1.0, "_source" : {
+  "properties":{
+    "name":"納沙布岬灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/01kanku/nemuro/nosappumisaki_lt/livecamera/index.html#000987",
+    "live_url":"http://61.115.123.234/viewer/live/ja/live.html"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[145.8169444444,43.3852777778]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"17","_score":1.0, "_source" : {
+  "properties":{
+    "name":"塩屋埼灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/02kanku/fukushima/shioyasaki_lt/livecamera/index.html#000995",
+    "live_url":"http://219.67.178.131/viewer/live/ja/live.html"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[140.981722,36.9950681]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"24","_score":1.0, "_source" : {
+  "properties":{
+    "name":"剱埼灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/03kanku/yokosuka/tsurugisaki_lt/livecamera/index.html#001000",
+    "live_url":"http://219.96.132.174/viewer/live/ja/live.html"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[139.669241,35.144873]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"50","_score":1.0, "_source" : {
+  "properties":{
+    "name":"関埼灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/07kanku/oita/sekisaki_lt/livecamera/index.html#001018",
+    "live_url":"http://210.155.210.68/viewer/live/ja/live.html"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[131.844552,33.288396]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"29","_score":1.0, "_source" : {
+  "properties":{
+    "name":"橋田鼻灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/04kanku/nagoya/hashidahana_lt/livecamera/index.html#001005"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[137.1698611111,34.7656111111]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"12","_score":1.0, "_source" : {
+  "properties":{
+    "name":"龍飛埼灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/02kanku/aomori/tappisaki_lt/livecamera/index.html#000989"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[140.342585,41.25877]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"36","_score":1.0, "_source" : {
+  "properties":{
+    "name":"大王埼灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/04kanku/toba/daiosaki_lt/livecamera/index.html#001008"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[136.8995,34.276104]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"48","_score":1.0, "_source" : {
+  "properties":{
+    "name":"音戸ノ瀬戸南口１",
+    "url":"http://180.43.117.132/mics/#001015"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[132.538377,34.194402]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"55","_score":1.0, "_source" : {
+  "properties":{
+    "name":"豆酘埼灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/07kanku/tsushima/tsutsusaki_lt/livecamera/index.html#283758",
+    "live_url":"http://220.157.178.162/viewer/live/ja/live.html"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[138.22572,34.595841]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"62","_score":1.0, "_source" : {
+  "properties":{
+    "name":"博奕岬灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/08kanku/maizuru/bakuchimisaki_lt/livecamera/index.html#001029"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[135.287713,35.614657]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"67","_score":1.0, "_source" : {
+  "properties":{
+    "name":"沢崎鼻灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/09kanku/niigata/sawasakihana_lt/livecamera/index.html#001031",
+    "live_url":"http://118.21.141.62/viewer/live/ja/live.html"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[138.2052783,37.8218128]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"74","_score":1.0, "_source" : {
+  "properties":{
+    "name":"小平瀬鼻灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/10kanku/kushikino/kohirasehana_lt/livecamera/index.html#001037",
+    "live_url":"http://210.163.183.251/viewer/live/ja/live.html",
+    "address":"鹿児島県阿久根市（小平瀬鼻）"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[130.1711111111,32.0811111111]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"28","_score":1.0, "_source" : {
+  "properties":{
+    "name":"八丈島灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/03kanku/shimoda/hachijosima_lt/livecamera/index.html#001004",
+    "live_url":"http://219.96.133.145/viewer/live/ja/live.html"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[139.80051,33.102183]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"35","_score":1.0, "_source" : {
+  "properties":{
+    "name":"鳥羽海上保安部庁舎",
+    "url":"http://www6.kaiho.mlit.go.jp/04kanku/toba/toba_cgo/livecamera/index.html#001009",
+    "address":"三重県鳥羽市鳥羽１－２３８３－２８"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[136.844564,34.489368]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"11","_score":1.0, "_source" : {
+  "properties":{
+    "name":"日和山灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/01kanku/otaru/hiyoriyama_lt/livecamera/index.html#000984",
+    "live_url":"http://61.115.72.222/viewer/live/ja/live.html"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[134.4282505,35.6238557]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"23","_score":1.0, "_source" : {
+  "properties":{
+    "name":"東京湾海上交通センター",
+    "url":"http://www6.kaiho.mlit.go.jp/03kanku/yokosuka/tokyowan_martis/livecamera/index.html#003320"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[139.7434481,35.2577707]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"30","_score":1.0, "_source" : {
+  "properties":{
+    "name":"名古屋港ガーデンふ頭",
+    "url":"http://www6.kaiho.mlit.go.jp/04kanku/nagoya/nagoyako_martis_no3/livecamera/index.html#003325"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[136.8788165,35.093975]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"42","_score":1.0, "_source" : {
+  "properties":{
+    "name":"大阪湾海上交通センター",
+    "url":"http://www6.kaiho.mlit.go.jp/05kanku/kobe/osakawan_martis/livecamera/index.html#003326"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[134.9918621,34.597247]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"9","_score":1.0, "_source" : {
+  "properties":{
+    "name":"葛登支岬灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/01kanku/hakodate/kattoshimisaki_lt/livecamera/index.html#000983"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[140.5994614,41.7422534]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"16","_score":1.0, "_source" : {
+  "properties":{
+    "name":"金華山灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/02kanku/miyagi/kinkasan_lt/livecamera/index.html#000994"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[141.554953,38.297775]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"4","_score":1.0, "_source" : {
+  "properties":{
+    "name":"増毛灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/01kanku/rumoi/mashike_lt/livecamera/index.html#000985"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[141.5275,43.855]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"47","_score":1.0, "_source" : {
+  "properties":{
+    "name":"音戸ノ瀬戸北口",
+    "url":"http://180.43.117.132/mics/#001014"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[132.538377,34.194402]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"54","_score":1.0, "_source" : {
+  "properties":{
+    "name":"三島灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/07kanku/tsushima/mitsushima_lt/livecamera/index.html#001022",
+    "live_url":"http://61.213.102.254/viewer/live/ja/live.html",
+    "address":"長崎県対馬市上対馬町"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[129.4443333333,34.7239166667]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"59","_score":1.0, "_source" : {
+  "properties":{
+    "name":"出雲日御碕サカグリ照射灯",
+    "url":"http://www6.kaiho.mlit.go.jp/08kanku/sakai/izumohinomisaki_sakaguri_sl/livecamera/index.html#001026",
+    "address":"島根県出雲市大社町日御碕"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[132.629645,35.428879]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"61","_score":1.0, "_source" : {
+  "properties":{
+    "name":"経ケ岬灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/08kanku/maizuru/kyogamisaki_lt/livecamera/index.html#001028"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[135.212529,35.771016]
+  }
+}},{"_index":"hazard_map","_type":"live_cam","_id":"66","_score":1.0, "_source" : {
+  "properties":{
+    "name":"舳倉島灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/09kanku/nanao/hegurashima_lt/livecamera/index.html#001032"  
+},
+    "geometry":{
+      "type":"point",
+      "coordinates":[136.922067,37.85392]
+  }
+}}]}}

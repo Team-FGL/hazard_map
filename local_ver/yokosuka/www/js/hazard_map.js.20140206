@@ -1,0 +1,71 @@
+var map;
+
+function initialize() {
+
+	var initPos = new google.maps.LatLng(35.780407,139.611950);
+	var myOptions = {
+		noClear : true,
+		center : initPos,
+		zoom : 9,
+		mapTypeId : google.maps.MapTypeId.ROADMAP
+	};
+	map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+
+
+	getCurrentLocation();
+	// 少し間をおいてからkmlを読み込む
+	window.setTimeout(function() {
+//			Read_rainfall_overlay_kml();
+	}, 1500);
+
+
+
+	Get_shelter_data();
+	Get_flood_data();
+	Get_live_cam_data();
+
+
+	// 画面の中心が変わったらkmlファイルの再取得と再ロード
+  google.maps.event.addListener(map, 'center_changed', function() {
+    // 3 seconds after the center of the map has changed, rewrite kml layer.
+    window.setTimeout(function() {
+//			rainfall_overlay_layer.setMap(null);
+//			Read_rainfall_overlay_kml();
+    }, 3000);
+  });
+
+	// zoomが変わったらkmlファイルの再取得と再ロード
+  google.maps.event.addListener(map, 'zoom_changed', function() {
+    window.setTimeout(function() {
+//			rainfall_overlay_layer.setMap(null);
+//			Read_rainfall_overlay_kml();
+    }, 3000);
+  });
+
+//	Main_loop();
+
+}
+
+
+function Main_loop() {
+	window.setTimeout(function() {
+//		rainfall_overlay_layer.setMap(null);
+//		Read_rainfall_overlay_kml();
+	}, 3000);
+}
+
+
+// 位置情報の取得
+function getCurrentLocation() {
+	// geo locationの取得
+	navigator.geolocation.getCurrentPosition(
+	// （1）位置情報の取得に成功した場合
+	function (pos) {
+		map.panTo(new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
+
+//		var marker = new google.maps.Marker({
+//			position: new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude),
+//			map: map
+//		});
+	});
+}

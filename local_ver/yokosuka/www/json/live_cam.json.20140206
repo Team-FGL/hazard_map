@@ -1,0 +1,167 @@
+{
+  "took" : 3,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 79,
+    "max_score" : 1.0,
+    "hits" : [ {
+      "_index" : "flood-map",
+      "_type" : "live_cam",
+      "_id" : "28",
+      "_score" : 1.0, "_source" : {
+  "live_cam":{
+    "id":28,
+    "name":"八丈島灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/03kanku/shimoda/hachijosima_lt/livecamera/index.html#001004",
+    "live_url":"http://219.96.133.145/viewer/live/ja/live.html",
+    "location":{
+      "type":"point",
+      "coordinates":[139.80051,33.102183]
+    }
+  }
+}
+    }, {
+      "_index" : "flood-map",
+      "_type" : "live_cam",
+      "_id" : "35",
+      "_score" : 1.0, "_source" : {
+  "live_cam":{
+    "id":35,
+    "name":"鳥羽海上保安部庁舎",
+    "url":"http://www6.kaiho.mlit.go.jp/04kanku/toba/toba_cgo/livecamera/index.html#001009",
+    "address":"三重県鳥羽市鳥羽１－２３８３－２８",
+    "location":{
+      "type":"point",
+      "coordinates":[136.844564,34.489368]
+    }
+  }
+}
+    }, {
+      "_index" : "flood-map",
+      "_type" : "live_cam",
+      "_id" : "11",
+      "_score" : 1.0, "_source" : {
+  "live_cam":{
+    "id":11,
+    "name":"日和山灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/01kanku/otaru/hiyoriyama_lt/livecamera/index.html#000984",
+    "live_url":"http://61.115.72.222/viewer/live/ja/live.html",
+    "location":{
+      "type":"point",
+      "coordinates":[134.4282505,35.6238557]
+    }
+  }
+}
+    }, {
+      "_index" : "flood-map",
+      "_type" : "live_cam",
+      "_id" : "23",
+      "_score" : 1.0, "_source" : {
+  "live_cam":{
+    "id":23,
+    "name":"東京湾海上交通センター",
+    "url":"http://www6.kaiho.mlit.go.jp/03kanku/yokosuka/tokyowan_martis/livecamera/index.html#003320",
+    "location":{
+      "type":"point",
+      "coordinates":[139.7434481,35.2577707]
+    }
+  }
+}
+    }, {
+      "_index" : "flood-map",
+      "_type" : "live_cam",
+      "_id" : "30",
+      "_score" : 1.0, "_source" : {
+  "live_cam":{
+    "id":30,
+    "name":"名古屋港ガーデンふ頭",
+    "url":"http://www6.kaiho.mlit.go.jp/04kanku/nagoya/nagoyako_martis_no3/livecamera/index.html#003325",
+    "location":{
+      "type":"point",
+      "coordinates":[136.8788165,35.093975]
+    }
+  }
+}
+    }, {
+      "_index" : "flood-map",
+      "_type" : "live_cam",
+      "_id" : "42",
+      "_score" : 1.0, "_source" : {
+  "live_cam":{
+    "id":42,
+    "name":"大阪湾海上交通センター",
+    "url":"http://www6.kaiho.mlit.go.jp/05kanku/kobe/osakawan_martis/livecamera/index.html#003326",
+    "location":{
+      "type":"point",
+      "coordinates":[134.9918621,34.597247]
+    }
+  }
+}
+    }, {
+      "_index" : "flood-map",
+      "_type" : "live_cam",
+      "_id" : "9",
+      "_score" : 1.0, "_source" : {
+  "live_cam":{
+    "id":9,
+    "name":"葛登支岬灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/01kanku/hakodate/kattoshimisaki_lt/livecamera/index.html#000983",
+    "location":{
+      "type":"point",
+      "coordinates":[140.5994614,41.7422534]
+    }
+  }
+}
+    }, {
+      "_index" : "flood-map",
+      "_type" : "live_cam",
+      "_id" : "16",
+      "_score" : 1.0, "_source" : {
+  "live_cam":{
+    "id":16,
+    "name":"金華山灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/02kanku/miyagi/kinkasan_lt/livecamera/index.html#000994",
+    "location":{
+      "type":"point",
+      "coordinates":[141.554953,38.297775]
+    }
+  }
+}
+    }, {
+      "_index" : "flood-map",
+      "_type" : "live_cam",
+      "_id" : "4",
+      "_score" : 1.0, "_source" : {
+  "live_cam":{
+    "id":4,
+    "name":"増毛灯台",
+    "url":"http://www6.kaiho.mlit.go.jp/01kanku/rumoi/mashike_lt/livecamera/index.html#000985",
+    "location":{
+      "type":"point",
+      "coordinates":[141.5275,43.855]
+    }
+  }
+}
+    }, {
+      "_index" : "flood-map",
+      "_type" : "live_cam",
+      "_id" : "47",
+      "_score" : 1.0, "_source" : {
+  "live_cam":{
+    "id":47,
+    "name":"音戸ノ瀬戸北口",
+    "url":"http://180.43.117.132/mics/#001014",
+    "location":{
+      "type":"point",
+      "coordinates":[132.538377,34.194402]
+    }
+  }
+}
+    } ]
+  }
+}

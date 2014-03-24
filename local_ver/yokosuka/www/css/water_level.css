@@ -1,0 +1,14 @@
+#water_level_window_class {
+  width: 370px;
+  //height: 150px;
+  height: 250px;
+  font-size:8pt;
+  overflow: hidden;
+}
+
+#water_level_sum_window_class {
+  width: 100px;
+  height: 50px;
+  font-size:8pt;
+  overflow: hidden;
+}

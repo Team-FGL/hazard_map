@@ -1,0 +1,114 @@
+// jsonデータを取得
+var kyoto_rescue_json;
+var kyoto_rescue_markers = new Array();
+
+//var	last_time;
+function Get_kyoto_rescue_json_data() {
+	/*
+	// そもそも座標が関係なくなったので初回に1度しか呼ばれないため機能停止
+	setTimeout後に連続して何度もこの関数が呼ばれているようなので、
+	1.5秒以内の場合はスキップする暫定対処
+
+	var current_time = Date.now();
+	if(current_time <= last_time + 3000){ return;}
+	last_time = current_time;
+	*/
+
+
+	var url = "http://pingineer.net/cgi-bin/flood-map_kyoto/rescue.cgi";
+	//console.log(url);
+
+	kyoto_rescue_json = new XMLHttpRequest();
+	kyoto_rescue_json.onload = Parse_kyoto_rescue_json;
+	kyoto_rescue_json.open("GET",url,true);
+	kyoto_rescue_json.send(null);
+}
+
+
+function Parse_kyoto_rescue_json() {
+	var obj = JSON.parse(kyoto_rescue_json.responseText);
+	//console.log(obj.places[0]);
+	//console.log(obj.places.length);
+
+	for(var i=0; i<obj.places.length; i++){
+		var j =0;
+		var lat,lon,name,address,tel,post_code;
+		for(var key1 in obj.places[i]){
+			for(var key2 in obj.places[i][key1]){
+				for(var key3 in obj.places[i][key1][key2]){
+					//console.log(obj.places[i][key1][key2][key3]);
+					if(j==0){ name = obj.places[i][key1][key2][key3]["value"];}
+					//if(j==2){ tel = obj.places[i][key1][key2][key3]["value"];}
+					if(j==4){ address = obj.places[i][key1][key2][key3]["value"];}
+					if(j==5){ lon = obj.places[i][key1][key2][key3]["value"];}
+					if(j==6){ lat = obj.places[i][key1][key2][key3]["value"];}
+					//if(j==11){ post_code = obj.places[i][key1][key2][key3]["value"];}
+
+					j++;
+
+				}
+			}
+		}
+		//console.log("" + lat + lon +name+address+tel+post_code);
+		// 京都の避難所用のmarkerとinfoWindowの作成		
+		Make_kyoto_rescue(lat,lon,name,address,tel,post_code);
+	}
+}
+
+
+
+
+
+// 京都の避難所用Markerの作成
+function Make_kyoto_rescue(lat, lng, name, address,tel,post_code) {
+
+	var myLatlng = new google.maps.LatLng(lat,lng);
+	var marker = new google.maps.Marker({
+		position: myLatlng,
+		map: map,
+		icon: "image/kyoto/rescue.png",
+		title:name
+	});
+
+
+	// 作成したmarkerを配列にコピー
+	// 直接入れるmarkerを作るとclick eventがなぜか上手く取れないため
+	var i = kyoto_rescue_markers.length;
+	kyoto_rescue_markers[i] = marker;
+	delete marker;
+	kyoto_rescue_markers[i].ext=new const_live_cam(name,address,tel,post_code);
+
+
+
+	// infoWindow内のテキスト
+	var info = "ここに避難する"
+		+ "<HR>\n"
+		+ kyoto_rescue_markers[i].ext.name + "<BR><BR>"
+		+ "住所:" + kyoto_rescue_markers[i].ext.address + "<BR>\n";
+		/*
+		+ "住所:" + kyoto_rescue_markers[i].ext.post_code + "<BR>\n"
+		+ kyoto_rescue_markers[i].ext.address + "<BR>\n"
+		+ "Tel:" + kyoto_rescue_markers[i].ext.tel;
+		*/	
+
+
+	
+	// markerクリックでinfoWindow表示
+	google.maps.event.addListener(kyoto_rescue_markers[i], 'click', function() {
+	var infoWindow = new google.maps.InfoWindow();
+		infoWindow.setContent(info);
+		infoWindow.setPosition(myLatlng);
+		infoWindow.open(map);
+
+		// markerを一旦非表示
+		//kyoto_rescue_markers[i].setVisible(false);
+	});
+
+}
+
+function const_live_cam(name,address,tel,post_code){
+	this.name = name;
+	this.address = address;
+	this.tel = tel;
+	this.post_code = post_code;
+}

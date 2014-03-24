@@ -1,0 +1,19 @@
+<html lang="ja">
+<head>
+<title>リモートでちょっと川の様子見てくる！</title>
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="description" content="flood map/ちょっとリモートで川の様子見てくる！">
+	<meta name="keywords" content="visualizaion, flood map, map">
+	<link rel="stylesheet" type="text/css" media="screen,print" href="style.css" />
+</head>
+<body>
+  <H1>help</H1>
+	<div>
+		<H2>リアルタイム雨量</H2>
+	</div>
+	<div>
+		<a href="index.html">戻る</a>
+	</div>
+</body>
+</html>

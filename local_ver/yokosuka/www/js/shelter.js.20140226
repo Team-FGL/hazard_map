@@ -1,0 +1,78 @@
+var markers = new Array();
+var infoWindows = new Array();
+
+var shelter_json;
+
+// 避難所のjsonデータ取得
+function Get_shelter_data() {
+ 	shelter_json = new XMLHttpRequest();
+	shelter_json.onload = Parse_shelter_json;
+	shelter_json.open("GET","json/shelter.json",true);
+	shelter_json.send(null);
+}
+
+// 避難所のjsonデータをパースしてmarkerを作成
+function Parse_shelter_json() {
+	//console.log(shelter_json.responseText);
+	//var obj = JSON.parse(shelter_json.responseText,JsonParseReviver);
+	var obj = JSON.parse(shelter_json.responseText);
+	//console.log(obj);
+	for(var i =0; i<obj.shelter.length; i++){
+		Make_shelter(obj.shelter[i].latitude, obj.shelter[i].longitude, obj.shelter[i].name,obj.shelter[i].address);
+	}
+}
+
+// jsonパーステスト用
+function JsonParseReviver(key,value){
+	// 出力テスト
+	console.log("key:" + key + " value:" + value);
+
+	// 変換したい値を返す（ここでは本来の値をそのまま返している）
+	return value;
+}
+
+// Markerの作成
+function Make_shelter(lat, lng, name, address) {
+	var myLatlng = new google.maps.LatLng(lat,lng);
+	var marker = new google.maps.Marker({
+		position: myLatlng,
+		map: map,
+		title:name
+	});
+
+	// 作成したmarkerを配列にコピー
+	var i = markers.length;
+	markers[i] = marker;
+	delete marker;
+	markers[i].ext=new shelter(name, address);
+
+	// infoWindow絡みの処理
+	var infoWindow = new google.maps.InfoWindow();
+	infoWindows[i] = infoWindow;
+	delete infoWindow;
+
+	var info = "避難所名:" + markers[i].ext.name + "<br>\n"
+		+  "住所:" + markers[i].ext.address;
+	// markerクリックでinfoWindow表示
+	google.maps.event.addListener(markers[i], 'click', function() {
+		infoWindows[i].setContent(info);
+		infoWindows[i].open(map,marker);
+
+		// markerを一旦非表示
+		markers[i].setVisible(false);
+	});
+
+
+	// infowindowの×ボタンを押された際に発火されるイベント
+	// 但し、スクリプト内からinfowindowをcloseした場合には発火されない。
+	google.maps.event.addListener(infoWindows[i], 'closeclick', function(){
+		//閉じた場合の処理を記載
+		// markerを再表示
+		markers[i].setVisible(true);
+	});
+}
+
+function shelter(name, address){
+	this.name = name;
+	this.address = address;
+}

@@ -1,0 +1,49 @@
+body {
+	background-color: #ffffff;
+}
+
+#google_translate_element {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+
+#hanrei {
+	//position: absolute;
+	color: #ffffff;
+	//bottom: 20px;
+	//right: 10px;
+	background-color: rgba(255,255,255,0.6);
+	border-radius: 3px;
+}
+/* 凡例のタイトル */
+.hanrei-title{
+	font-size:12px;
+	color:#FFFFFF;
+	background-color:#0000FF;
+	text-align:center;
+}
+
+/* 凡例内容 */
+.hanrei-body{
+	font-size:12px;
+	color:#000000;
+	background-color:#FFFFFF;
+	text-align:left;
+}
+.cl-deeppurple{color:#9900CC;}/* 色：濃い紫 */
+.cl-purple{color:#9933FF;}/* 色：紫 */
+.cl-deepred{color:#CC0000;}/* 色：濃い赤 */
+.cl-red{color:#FF0000;}/* 色：赤 */
+.cl-pink{color:#FF99FF;}/* 色：ピンク */
+.cl-orange{color:#FFCC33;}/* 色：オレンジ */
+.cl-yellow{color:#FFFF00;}/* 色：黄色 */
+.cl-yellowgreen{color:#66FF33;}/* 色：黄緑色 */
+.cl-green{color:#339900;}/*色：緑色 */
+.cl-blue{color:#003399;}/* 色：青 */
+.cl-skyblue{color:#6666FF;}/* 色：水色 */
+.cl-lightskyblue{color:#99FFFF;}/* 色：淡水色 */
+.cl-white{color:#FFFFFF;}/* 色：白 */
+.cl-grey{color:#727272;}/* 色：灰色 */
+.cl-black{color:#000000;}/* 色：黒 */

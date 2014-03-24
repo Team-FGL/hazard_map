@@ -1,0 +1,91 @@
+var map;
+var last_time;
+
+function initialize() {
+
+	var initPos = new google.maps.LatLng(35.780407,139.611950);
+	var myOptions = {
+		noClear : true,
+		center : initPos,
+		zoom : 9,
+		mapTypeId : google.maps.MapTypeId.ROADMAP
+	};
+	map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+
+
+	getCurrentLocation();
+	// 少し間をおいてからjsonを読み込む
+	window.setTimeout(function() {
+		Get_json_data();
+	}, 1500);
+
+
+
+	Get_shelter_data();
+	Get_flood_data();
+
+
+	// 画面の中心が変わったらkmlファイルの再取得と再ロード
+  google.maps.event.addListener(map, 'center_changed', function() {
+    // 3 seconds after the center of the map has changed, rewrite kml layer.
+    window.setTimeout(function() {
+			Get_json_data();
+//			rainfall_overlay_layer.setMap(null);
+//			Read_rainfall_overlay_kml();
+    }, 1500);
+  });
+
+	// zoomが変わったらkmlファイルの再取得と再ロード
+  google.maps.event.addListener(map, 'zoom_changed', function() {
+    window.setTimeout(function() {
+			Get_json_data();
+//			rainfall_overlay_layer.setMap(null);
+//			Read_rainfall_overlay_kml();
+    }, 1500);
+  });
+
+//	Main_loop();
+
+}
+
+
+function Get_json_data() {
+	/*
+	setTimeout後に連続して何度もこの関数が呼ばれているようなので、
+	1.5秒以内の場合はスキップする暫定対処
+	*/
+	var current_time = Date.now();
+	if(current_time <= last_time + 1500){ return;}
+	last_time = current_time;
+
+	var north = map.getBounds().getNorthEast().lat();
+	var east  = map.getBounds().getNorthEast().lng();
+	var south = map.getBounds().getSouthWest().lat();
+	var west = map.getBounds().getSouthWest().lng();
+	var zoom = map.getZoom();
+	Get_live_cam_data(west,north,east,south);
+	Get_rainfall_data(west,north,east,south);
+}
+
+function Main_loop() {
+	window.setTimeout(function() {
+//		rainfall_overlay_layer.setMap(null);
+//		Read_rainfall_overlay_kml();
+	}, 3000);
+}
+
+
+// 位置情報の取得
+function getCurrentLocation() {
+	// geo locationの取得
+	navigator.geolocation.getCurrentPosition(
+	// （1）位置情報の取得に成功した場合
+	function (pos) {
+		map.panTo(new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
+
+//		var marker = new google.maps.Marker({
+//			position: new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude),
+//			map: map
+//		});
+	});
+}
