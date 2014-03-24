@@ -1,0 +1,38 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script type="text/javascript">
+        var languageFrom = "en";
+        var languageTo = "de";
+        var text = "Use pixels to express measurements for padding and margins.";
+        function translate() {
+            PageMethods.GetAccessToken(OnSucceeded, OnFailed);
+
+        }
+        function OnSucceeded(result, usercontext, methodName) {
+
+            window.mycallback = function (response) {
+                document.getElementById('<%= lblResult.ClientID %>').innerHTML = "Translation for <br />source text: '" + text + "'<br /> from en to de <br /> " + response;
+            }
+
+            var s = document.createElement("script");
+            //s.src = "http://api.microsofttranslator.com/V2/Ajax.svc/Translate?oncomplete=mycallback&appId=Bearer " + encodeURIComponent(result.access_token) + "&from=" + languageFrom + "&to=" + languageTo + "&text=" + text;
+            s.src = "http://api.microsofttranslator.com/V2/Ajax.svc/Translate?oncomplete=mycallback&anshinchan&from=" + languageFrom + "&to=" + languageTo + "&text=" + text;
+            document.getElementsByTagName("head")[0].appendChild(s);
+        }
+        function OnFailed(error, userContext, methodName) {
+            alert("Error");
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ScriptManager ID="ScriptManager" runat="server" EnablePageMethods="true" />
+        <asp:Button ID="buttonTranslate" runat="server" Text="Translate" OnClientClick="translate();return false;" />
+        <br />
+        <asp:Label ID="lblResult" runat="server"></asp:Label>
+    </div>
+    </form>
+</body>
+</html>
