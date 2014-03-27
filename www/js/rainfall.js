@@ -63,7 +63,7 @@ function Delete_rainfall_markers(array) {
 function Make_rainfall(lat, lng, id, name, address,url,count,type) {
 	if(type=="rainfall"){
 		var array = rainfall_markers;
-		var icon="image/rainfall.png";
+		var icon="http://maps.google.com/mapfiles/ms/micons/rainy.png";
 		var info = "<div id='rainfall_window_class'>"
 			+ "<object style='height:100%;width:100%;' data='"
 			//+ url.replace("http://www.river.go.jp/","http://153.121.40.227/river/html/full/")
@@ -80,7 +80,7 @@ function Make_rainfall(lat, lng, id, name, address,url,count,type) {
 		}
 	} else{
 		var array = rainfall_sum_markers;
-		var icon="image/rainfall_sum.png";
+		var icon="http://maps.google.com/mapfiles/ms/micons/rainy.png";
 		var info = "<div id='rainfall_sum_window_class'>"
 			+ "<a href=\"" + url + "\">"
 			+ name + "</a><br>"

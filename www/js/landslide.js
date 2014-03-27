@@ -133,7 +133,7 @@ function Parse_landslide_marker(id,array) {
 // landslide用のMarkerの作成
 function Make_landslide(lat, lng, id) {
 	var array = landslide_markers;
-	var icon="image/landslide.png";
+	var icon="http://maps.google.com/mapfiles/ms/micons/fallingrocks.png";
 
 	// 同じIDのmarkerがあればスキップ
 	for(var i =0; i<array.length; i++){

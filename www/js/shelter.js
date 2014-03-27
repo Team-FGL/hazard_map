@@ -120,7 +120,7 @@ function Make_shelter(lat, lng, id, name, address,type,p20_007,p20_008,p20_009,p
 		}
 	}
 
-	var icon="image/shelter.png";
+	var icon="http://maps.google.co.jp/mapfiles/ms/icons/homegardenbusiness.png";
 	var info = '<div id="shelter_infowindow_class">'
 		+ '<button type="button" onclick=change_shelter('
 		 + lat + "," + lng +  ');>select</button><hr>'

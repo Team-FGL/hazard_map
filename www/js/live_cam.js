@@ -73,7 +73,7 @@ function Make_live_cam(lat, lng, id, name, address,url,live_url) {
 	var marker = new google.maps.Marker({
 		position: myLatlng,
 		map: map,
-		icon: "image/camera.png",
+		icon: "http://maps.google.com/mapfiles/ms/micons/camera.png",
 		title:name
 	});
 

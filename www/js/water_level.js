@@ -63,7 +63,7 @@ function Delete_water_level_markers(array) {
 function Make_water_level(lat, lng, id, name, address,url,count,type) {
 	if(type=="water_level"){
 		var array = water_level_markers;
-		var icon="image/water_level.png";
+		var icon="http://maps.google.co.jp/mapfiles/ms/icons/water.png";
 		var info = "<div id='water_level_window_class'>"
 			+ "<object style='height:100%;width:100%;' data='"
 		//	+ url.replace("http://www.river.go.jp/","http://153.121.40.227/river/html/full/")
@@ -77,7 +77,7 @@ function Make_water_level(lat, lng, id, name, address,url,count,type) {
 		}
 	} else{
 		var array = water_level_sum_markers;
-		var icon="image/water_level_sum.png";
+		var icon="http://maps.google.co.jp/mapfiles/ms/icons/water.png";
 		var info = "<div id='water_level_sum_window_class'>"
 			+ "<a href=\"" + url + "\">"
 			+ name + "</a><br>"
